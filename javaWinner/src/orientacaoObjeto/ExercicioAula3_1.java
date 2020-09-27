@@ -11,25 +11,18 @@ public class ExercicioAula3_1 {
 		System.out.println("(2) Cadastro de Endereço");
 		System.out.println("(3) Sair");
 
-		String nome = "";
-		String sexo = "";
-		String numero = "";
-		String complemento = "";
-		String rua = "";
-		String cep = "";
-		int idade = 0;
 		int opcao = entrada.nextInt();
 		entrada.nextLine();
 
 		switch (opcao) {
 		case 1:
 			System.out.println("Digite o Nome: ");
-			nome = entrada.nextLine();
+			String nome = entrada.nextLine();
 			System.out.println("Digite a Idade: ");
-			idade = entrada.nextInt();
+			int idade = entrada.nextInt();
 			entrada.nextLine();
 			System.out.println("Digite o Sexo: ");
-			sexo = entrada.nextLine();
+			String sexo = entrada.nextLine();
 			System.out.println(" ");
 			System.out.println("-------------Pessoa-------------");
 			System.out.println("Nome: " + nome + " Idade: " + idade);
@@ -38,13 +31,13 @@ public class ExercicioAula3_1 {
 
 		case 2:
 			System.out.println("Informe o número: ");
-			numero = entrada.nextLine();
+			String numero = entrada.nextLine();
 			System.out.println("Informe a rua: ");
-			rua = entrada.nextLine();
+			String rua = entrada.nextLine();
 			System.out.println("Informe complemento: ");
-			complemento = entrada.nextLine();
+			String complemento = entrada.nextLine();
 			System.out.println("Informe o CEP: ");
-			cep = entrada.nextLine();
+			String cep = entrada.nextLine();
 			System.out.println("-------------Endereço-------------");
 			System.out.println("Rua: " + rua + " Nº: " + numero);
 			System.out.println("Comp: " + complemento + " CEP: " + cep);
